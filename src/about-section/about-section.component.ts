@@ -11,9 +11,11 @@ export class AboutSectionComponent implements OnInit {
   }
 
   rotation = 0;
+  rotation2 = 0;
 
   rotate(){
     this.rotation += 11.25;
+    this.rotation2 += -11.25;
     console.log(this.rotation);
   }
 

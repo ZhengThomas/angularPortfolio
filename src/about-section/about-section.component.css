@@ -59,13 +59,22 @@
 }
 
 .redBox{
-  outline:3px solid red;
+  outline:2px solid red;
   width:min(40vw, 40vh);
   height:min(40vw, 40vh);
   z-index: -1000;
   position: absolute;
-  left:-10%;
-  top:35%;
+  
 
-  transition: transform 0.2s cubic-bezier(.4,2.08,.55,.34);
+  transition: transform 0.25s cubic-bezier(.4,2.08,.55,.34);
+}
+
+.big{
+  width:min(50vw, 50vh);
+  height:min(50vw, 50vh);
+}
+
+.small{
+  width:min(30vw, 30vh);
+  height:min(30vw, 30vh);
 }
