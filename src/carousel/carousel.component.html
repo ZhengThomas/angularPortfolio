@@ -1,0 +1,60 @@
+<h1 class = "projectHeader">
+    Projects
+</h1>
+
+<div class = "carouselContainer">
+<ngb-carousel *ngIf="images" class = "entireCarousel">
+	<ng-template ngbSlide>
+        <div class = "eachSlide">
+            <div class = "image" [ngStyle]="{'background-image': 'url('+ images[0] +')'}"></div>
+            <div class = "content">
+                <div class = "top">
+                    <h2 class = "text">OP.GG2</h2>
+                </div>
+                <div class = "middle">
+                    <p>A League of Legends stat tracker. Find match history, ranked data, and more.</p>
+                </div>
+                <div class = "bottom">
+                    
+                  <a href="https://github.com/Trisexual/op.gg2"><button class = "buttonContent"><h2>See it</h2></button></a>
+                    
+                </div>
+            </div>
+        </div>
+	</ng-template>
+
+	<ng-template ngbSlide>
+        <div class = "eachSlide">
+            <div class = "image" [ngStyle]="{'background-image': 'url('+ images[1] +')'}"></div>
+            <div class = "content">
+              <div class = "top">
+                <h2 class = "text">Jump Bounce</h2>
+              </div>
+              <div class = "middle">
+                <p>A video game.<br /><br /> Bounce off of platforms to gain a high score.</p>
+              </div>
+              <div class = "bottom">
+                <a href="https://trisexual.itch.io/jump-bounce"><button class = "buttonContent"><h2>Play It</h2></button></a>
+              </div>
+            </div>
+          </div>
+	</ng-template>
+
+    <ng-template ngbSlide>
+        <div class = "eachSlide">
+            <div class = "image" [ngStyle]="{'background-image': 'url('+ images[2] +')'}"></div>
+            <div class = "content">
+              <div class = "top">
+                <h2 class = "text">Chess Game</h2>
+              </div>
+              <div class = "middle">
+                <p>Capable of playing either online with a friend, or with a fairly advanced AI</p>
+              </div>
+              <div class = "bottom">
+                <a href="https://github.com/ZhengThomas/chess-game"><button class = "buttonContent"><h2>See it</h2></button></a>
+              </div>
+            </div>
+          </div>
+	</ng-template>
+</ngb-carousel>
+</div>

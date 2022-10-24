@@ -1,0 +1,68 @@
+.messageBox{
+    width:93vw;
+    height:30vh;
+    resize:none;  
+    margin: 0px;
+    padding: 0px;  
+    vertical-align: top;
+    margin-top: 2vh;
+}
+
+.power{
+    background-color: red;
+}
+
+.emailBox{
+    width:93vw;
+    margin: 0px;
+    padding: 0px;  
+    
+}
+
+.errorText{
+    color:white;
+    padding: 0px;  
+}
+
+h1{
+    color:white;
+}
+
+.sendButton{
+    width : 4vw;
+    height : 2vw;
+    background-color: #d9111c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 0;
+    border: none;
+
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+.sendButton:disabled{
+    width : 4vw;
+    height : 2vw;
+    background-color: #e9707698;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 0;
+    border: none;
+}
+
+#formInfo{
+    margin-top:15vh;
+}
+
+.entireForm{
+    width:93vw;
+    margin-left: 3vw;
+    
+}

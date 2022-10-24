@@ -1,49 +1,21 @@
 <div class="aboutSection">
-  <h1
-    [style]="{
-      fontSize: 'min(12vw,12vh)',
-      width: '100%',
-      textAlign: 'center',
-      color: 'white'
-    }"
-  >
+  <h1 class = "aboutHeader">
     About
   </h1>
-  <div
-    style="
-       {
-        height: 'min(28vw,28vh)';
-      }
-    "
-  ></div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-12">
         <div class="container">
           <div class="center">
-            <h2>Powerful man from Canada land</h2>
-            <h2>10th grade student at Fleetwood Park Secondary</h2>
-            <h2>vimdeo gaames</h2>
+            <h2>Senior Student at Fleetwood Park Secondary</h2>
+            <h2>Full stack web developer</h2>
+            <h2>In love with volleyball</h2>
+            <h2>Highly open to new opportunities</h2>
           </div>
-
-          <div class="backgroundBox"></div>
-          <div class="backgroundBox2"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="container">
-          <div class="center">
-            <h2>The best volleyball setter to exist</h2>
-            <h2>Passionate for writing code</h2>
-            <h2>In love with creating new projects</h2>
-            <h2>As well as anime girls</h2>
-          </div>
-
-          <div class="backgroundBox"></div>
-          <div class="backgroundBox2"></div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class = "redBox" [ngStyle]="{'transform': 'rotate(' + rotation + 'deg)'}"></div>
 </div>
