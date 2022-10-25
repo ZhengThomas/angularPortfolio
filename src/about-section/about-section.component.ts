@@ -20,6 +20,6 @@ export class AboutSectionComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setInterval(this.rotate, 1000);
+    //setInterval(this.rotate, 1000);
   }
 }
