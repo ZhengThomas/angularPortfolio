@@ -1,18 +1,39 @@
+<div class="entireForm">
+  <h1 id="formInfo">Email Me</h1>
 
-<div class = "entireForm">
-    <h1 id = "formInfo">Email Me</h1>
+  <form [formGroup]="contactForm" class="form">
+    <form ngNoForm actiuon="https://formspree.io/f/" method="post">
+      <input
+        type="email"
+        name="email"
+        formControlName="email"
+        placeholder="Enter your email"
+        class="emailBox"
+      />
+      <br />
+      <span *ngIf="email?.invalid" class="errorText">Email is not valid</span>
+      <span *ngIf="!email?.invalid" class="errorText"></span>
+      <br />
 
-    <form [formGroup]="contactForm" (ngSubmit)="submit()" method="GET" class = "form">
-        <input type="email" name='email' formControlName="email" placeholder="Enter your email" class = "emailBox"> <br>
-        <span *ngIf="email?.invalid;" class = "errorText">Email is not valid</span>
-        <span *ngIf="!email?.invalid;" class = "errorText"></span>
-        <br>
+      <textarea
+        formControlName="body"
+        name="body"
+        type="text"
+        placeholder="Message"
+        class="messageBox"
+        resize="none"
+      ></textarea
+      ><br />
+      <span *ngIf="body?.invalid" class="errorText">No Message Written</span>
+      <span *ngIf="!body?.invalid" class="errorText"></span>
+      <br />
 
-        <textarea formControlName="body" name='body' type="text" placeholder="Message" class = "messageBox" resize="none"></textarea><br>
-        <span *ngIf="body?.invalid" class = "errorText">No Message Written</span>
-        <span *ngIf="!body?.invalid" class = "errorText"></span>
-        <br>
-
-        <input [disabled]="!contactForm.valid" type="submit" value="Send" class="sendButton">
+      <input
+        [disabled]="!contactForm.valid"
+        type="submit"
+        value="Send"
+        class="sendButton"
+      />
     </form>
+  </form>
 </div>
