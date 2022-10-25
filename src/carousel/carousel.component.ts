@@ -9,7 +9,7 @@ export class CarouselComponent implements OnInit {
 
   constructor() { }
 
-  images = ["/assets/images/opgg.png", "assets/images/jumpBounce.png", "assets/images/chess.png"]
+  images = ["assets/images/opgg.png", "assets/images/jumpBounce.png", "assets/images/chess.png"]
 
   ngOnInit(): void {
   }
